@@ -1,0 +1,32 @@
+// Game loops
+//  Menus
+//  Gameplay
+//  Game Over (Statistics screen)
+
+// Menus loop
+//  Title Screen
+//    Any key to proceed
+//  Menu Screen
+//    New Game
+//      Gameplay Settings
+//        Map Type
+//        Map Size
+//        Number of Settlements (Max determined by map size)
+//        Number of Players (2 - number determined by map size)
+//        AI difficulty (?)
+//      JB : Maybe a note about expected game length based on settlements and players
+//    Load Game
+//      Saved games need to remember map(layout as well as settlement placements), players(settlements remaining, resources owned),
+//        turn(whose turn is it? Any actions made before saving to allow undoing to start of turn)
+//    Settings (Sound and Video //JB : not sure what would be here to start aside from Volume sliders)
+//    Quit
+
+// Gameplay loop
+//  Get current player
+//   What Biome are they settling in this turn
+//  Select Default play
+//   Find and Highlight hexes that obey adjacency rules
+//     Recalculate adjacency as tiles are placed
+//     Undo Button: undoes last placement
+//  Player can change current play from default to special, special to other special, or special to default
+//   plays can be made in any order
